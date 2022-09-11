@@ -1,6 +1,7 @@
 "use strict" // Make it strict and catch any subtle error
 
 
+const API_endpoint = "https://api.openweathermap.org/data/2.5/weather";
 const API_key = OpenWeatherMap API KEY;
 // Get access to the HTML elements
 const date = document.querySelector(".date");
@@ -34,7 +35,7 @@ const weatherIcons = {
 // Makes an HTTP request to the OpenWeatherMap
 function setData(latitude, longitude) {
 
-  let request = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${API_key}`;
+  let request = `${API_endpoint}?lat=${latitude}&lon=${longitude}&units=metric&appid=${API_key}`;
 
   const xhr = new XMLHttpRequest();
   xhr.open("GET", request);
