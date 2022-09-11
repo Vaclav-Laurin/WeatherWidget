@@ -1,7 +1,7 @@
 "use strict" // Make it strict and catch any subtle error
 
 
-const API_key = "e4456ba56beac00ee2af1bb5281e6aac";
+const API_key = OpenWeatherMap API KEY;
 // Get access to the HTML elements
 const date = document.querySelector(".date");
 const place = document.querySelector(".place");
